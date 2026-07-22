@@ -26,7 +26,7 @@ def find_builtin_camera_index():
 FRAME_WIDTH = 1280
 FRAME_HEIGHT = 800
 
-# BUTTON_COLOR = (43, 43, 35)
+
 BUTTON_COLOR = (150, 138, 66)
 TEXT_COLOR = (211, 194, 205)
 HAND_FRAME_COLOR = (239, 206, 123)
