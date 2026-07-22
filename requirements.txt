@@ -1,0 +1,15 @@
+# mediapipe>=0.10.30 dropped the legacy `mp.solutions` API on macOS (arm64)
+# that this app depends on (mp.solutions.hands) - do not upgrade past 0.10.21
+# without confirming mediapipe.python.solutions.hands still imports.
+mediapipe==0.10.21
+
+# Do not add opencv-python separately: mediapipe installs opencv-contrib-python
+# as its own dependency, and both packages installed together clobber each
+# other's cv2 files.
+
+Pillow==12.3.0
+
+# Continuity Camera avoidance (main.find_builtin_camera_index) - macOS only.
+pyobjc-core==12.2.1
+pyobjc-framework-AVFoundation==12.2.1
+pyobjc-framework-Cocoa==12.2.1
